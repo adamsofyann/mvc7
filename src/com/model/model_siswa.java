@@ -50,6 +50,11 @@ public class model_siswa implements controller_siswa {
         siswa.cbJurusan.setSelectedIndex(0);
 
     }
+
+    @Override
+    public void ubah(form_siswa siswa) throws SQLException {
+        
+    }
 }
 
  
