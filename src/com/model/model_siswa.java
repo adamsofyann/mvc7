@@ -44,8 +44,8 @@ public class model_siswa implements controller_siswa {
 
     @Override
     public void baru(form_siswa siswa) throws SQLException {
-          siswa.txtNIS.setText(jk);
-         siswa.txtNama.setText(jk);
+          siswa.txtNIS.setText("");
+        siswa.txtNama.setText("");
         siswa.rbLaki.setSelected(true);
         siswa.cbJurusan.setSelectedIndex(0);
 
@@ -73,7 +73,7 @@ public class model_siswa implements controller_siswa {
         } finally {
             Tampil(siswa);
             siswa.setLebarKolom();
-            Baru(siswa);
+            baru(siswa);
         }  
     }
 
@@ -99,6 +99,13 @@ public class model_siswa implements controller_siswa {
             System.out.println(e);
         }
     }
+
+    @Override
+    public void KlikTabel(form_siswa siswa) throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
 }
 
  
